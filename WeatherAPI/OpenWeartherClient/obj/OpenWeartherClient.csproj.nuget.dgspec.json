@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj": {}
+    "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj": {}
   },
   "projects": {
-    "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj": {
+    "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj",
+        "projectUniqueName": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj",
         "projectName": "OpenWeartherClient",
-        "projectPath": "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj",
+        "projectPath": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj",
         "packagesPath": "C:\\Users\\d5417\\.nuget\\packages\\",
-        "outputPath": "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\obj\\",
+        "outputPath": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

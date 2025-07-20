@@ -515,11 +515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\E\\C#\\Weather\\WeatherAPI\\WeatherAPI\\WeatherAPI.csproj",
+      "projectUniqueName": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\WeatherAPI.csproj",
       "projectName": "WeatherAPI",
-      "projectPath": "C:\\E\\C#\\Weather\\WeatherAPI\\WeatherAPI\\WeatherAPI.csproj",
+      "projectPath": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\WeatherAPI.csproj",
       "packagesPath": "C:\\Users\\d5417\\.nuget\\packages\\",
-      "outputPath": "C:\\E\\C#\\Weather\\WeatherAPI\\WeatherAPI\\obj\\",
+      "outputPath": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -541,8 +541,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj": {
-              "projectPath": "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj"
+            "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj": {
+              "projectPath": "C:\\E\\C#\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj"
             }
           }
         }

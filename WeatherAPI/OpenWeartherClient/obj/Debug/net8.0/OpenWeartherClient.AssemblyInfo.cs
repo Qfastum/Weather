@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenWeartherClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99abbf5de32070966a32877c205d0cbd94d984fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenWeartherClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenWeartherClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
