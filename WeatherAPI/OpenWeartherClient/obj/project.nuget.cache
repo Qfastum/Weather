@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xatqaNPpDgY=",
+  "success": true,
+  "projectFilePath": "C:\\E\\C#\\Weather\\WeatherAPI\\OpenWeartherClient\\OpenWeartherClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\d5417\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

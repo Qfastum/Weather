@@ -1,0 +1,12 @@
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\bin\Debug\net8.0\OpenWeartherClient.deps.json
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\bin\Debug\net8.0\OpenWeartherClient.dll
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\bin\Debug\net8.0\OpenWeartherClient.pdb
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.csproj.AssemblyReference.cache
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.AssemblyInfoInputs.cache
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.AssemblyInfo.cs
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.csproj.CoreCompileInputs.cache
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.dll
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\refint\OpenWeartherClient.dll
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\OpenWeartherClient.pdb
+C:\E\C#\Weather\WeatherAPI\OpenWeartherClient\obj\Debug\net8.0\ref\OpenWeartherClient.dll
