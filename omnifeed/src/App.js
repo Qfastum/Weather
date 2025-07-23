@@ -1,12 +1,13 @@
 import './App.css';
-import Content from './components/Weather/Content';
+import ContentWeather from './components/Weather/ContentWeather';
 import Header from './components/header/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-wrapper">
       <Header />
-      <Content /> 
+      <ContentWeather /> 
+      
     </div>
   );
 }

@@ -1,7 +1,8 @@
-.App {
+.app-wrapper {
   margin: 0 auto;
   width: 1280px;
   display: grid;
+  gap: 1rem;
   grid-template-areas: 
   "app-header"
   "content";

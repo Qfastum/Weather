@@ -1,9 +1,41 @@
 .header {
   grid-area: app-header;
   background-color: #C6F7EA;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 2.2rem; /* Расстояние между лого и сервисами */
 }
 
-.img {
+.logo {
   width: 75px;
+  height: auto;
+  flex-shrink: 0; /* Запрещаем сжатие логотипа */
+}
 
+.servicesContainer {
+  display: flex;
+  gap: 2rem; /* Расстояние между сервисами */
+}
+
+.service {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+  /* Стили при наведении */
+  &:hover {
+    background-color: #1ec561;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили при клике */
+  &:active {
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.12);
+  }
 }
