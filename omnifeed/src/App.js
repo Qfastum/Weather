@@ -9,7 +9,7 @@ function App() {
       <div className="app-wrapper">
         <Header />
         <Routes>
-           <Route path='/home' element={ <ContentWeather />}/>
+           <Route path='/' element={ <ContentWeather />}/>
           <Route path='/openWeather' element={ <ContentWeather site="OpenWeather" />}/>
           <Route path='/gismeteo' element={<ContentWeather site="Gismeteo" />}/>
         </Routes>

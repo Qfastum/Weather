@@ -4,22 +4,21 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  gap: 2.2rem; /* Расстояние между лого и сервисами */
-}
-
-.a{
-  
+  gap: 2.2rem;
+  /* Расстояние между лого и сервисами */
 }
 
 .logo {
   width: 75px;
   height: auto;
-  flex-shrink: 0; /* Запрещаем сжатие логотипа */
+  flex-shrink: 0;
+  /* Запрещаем сжатие логотипа */
 }
 
 .servicesContainer {
   display: flex;
-  gap: 2rem; /* Расстояние между сервисами */
+  gap: 2rem;
+  /* Расстояние между сервисами */
 }
 
 .service {
@@ -29,17 +28,24 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.25s ease;
-  
-  /* Стили при наведении */
-  &:hover {
-    background-color: #1ec561;
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Стили при клике */
-  &:active {
-    transform: translateY(0);
-    background-color: rgba(0, 0, 0, 0.12);
-  }
+}
+
+.service:hover {
+  background-color: #1ec561;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service:active {
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a.activeLink {
+  color: white;
 }
