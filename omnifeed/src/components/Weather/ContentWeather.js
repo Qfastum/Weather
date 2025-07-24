@@ -3,9 +3,9 @@ import styles from "./Content.module.css";
 import SearchSection from "./searchSection/searchSection";
 import WeatherData from "./weatherData/weatherData";
 
-function ContentWeather({ site }) {
+function ContentWeather({ weatherServiceConfig }) {
 
-    if (!site) {
+    if (!weatherServiceConfig) {
         return (
             <div className={styles.weatherContainer}>
             </div>
@@ -14,8 +14,8 @@ function ContentWeather({ site }) {
     else
         return (
             <div className={styles.weatherContainer}>
-                <SearchSection site={site} />
-                <WeatherData site={site} />
+                <SearchSection site={weatherServiceConfig.name} />
+                <WeatherData site={weatherServiceConfig.name} />
             </div>
         )
 }
