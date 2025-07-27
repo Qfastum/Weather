@@ -3,11 +3,11 @@ import { connect } from "react-redux";
 import { updateNewWeatherCityText, updateWeather } from "../../../redux/weather/weatherSlice";
 
 const mapStateToProps = (state) => ({
-    newWeatherCity: state.weather.newWeatherCity,
+    City: state.weather.newWeatherCity,
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    updateCiteText: (text) => {
+    updateCityText: (text) => {
         dispatch(updateNewWeatherCityText(text));
     },
 

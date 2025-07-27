@@ -1,10 +1,13 @@
-.weatherData {
-    display: grid;
-    place-items: center;
+.weatherContainer {
+    font-family: 'Arial', sans-serif;
+    /* display: grid;
+    place-items: center; */
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .weatherCard {
-    width: 100%;
+    /* width: 100%;
     max-width: 750px;
     height: 100%    ;
     max-height: 570px;
@@ -13,5 +16,61 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     display: grid;
-    place-items: center;
+    place-items: center; */
+
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weatherCard h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.weatherMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px, 0;
+}
+
+.weatherIcon {
+    margin-top: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.temperature {
+    text-align: right;
+}
+
+.currentTemp {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.tempRange {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 1rem ;
+    margin-top: 5px;
+}
+
+.weatherDetails{
+    margin-top: 20px;
+}
+
+.detalisItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px, 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detalisItem span:first-child{
+    font-weight: bold;
+    color: #555;
 }
