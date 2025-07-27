@@ -7,13 +7,20 @@ function WeatherData(props) {
             <div className={styles.weatherCard}>
                 <h2>Погода в городе {props.City}</h2>
                 <div className={styles.weatherMain}>
-                    <div className={styles.weatherIcon}>
-                        {props.weatherData.icon && <img
-                            src={`https://openweathermap.org/img/wn/${props.weatherData.icon}@2x.png`}
-                            alt={props.weatherData.weatherConditions}
-                        />
-                        }
-                        <span>{props.weatherData.weatherConditions}</span>
+                    <div className={styles.weatherIconContainer}>
+                        {props.weatherData.icon &&
+                            (<div className={styles.weatherIconWrapper}>
+                                <img
+                                    className={styles.weatherIconImage}
+                                    src={`https://openweathermap.org/img/wn/${props.weatherData.icon}@2x.png`}
+                                    alt=''
+                                />
+                                <span className={styles.weatherIconCaption}>
+                                    {props.weatherData.weatherConditions}
+                                </span>
+                            </div>
+                            )}
+
                     </div>
                     <div className={styles.temperature}>
                         <span className={styles.currentTemp}>
@@ -29,11 +36,11 @@ function WeatherData(props) {
                 <div className={styles.weatherDetails}>
                     <div className={styles.detailItem}>
                         <span> Описание:</span>
-                        <span>{props.description}</span>
+                        <span> {props.weatherData.description}</span>
                     </div>
                     <div className={styles.detailItem}>
                         <span>Скорость ветра:</span>
-                        <span>{props.windSpeed}</span>
+                        <span> {props.weatherData.windSpeed}</span>
                     </div>
                 </div>
             </div>

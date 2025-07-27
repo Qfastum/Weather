@@ -1,9 +1,8 @@
 import styles from "./searchSection.module.css";
 
 function SearchSection(props) {
-
     let updateWeather = () => {
-        props.updateWeather();
+        props.updateWeather(props.City);
     }
 
     let onCityChange = (e) => {

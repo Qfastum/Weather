@@ -1,6 +1,6 @@
 import SearchSection from "./searchSection";
 import { connect } from "react-redux";
-import { updateNewWeatherCityText, updateWeather } from "../../../redux/weather/weatherSlice";
+import { fetchWeatherData, updateNewWeatherCityText} from "../../../redux/weather/weatherSlice";
 
 const mapStateToProps = (state) => ({
     City: state.weather.newWeatherCity,
@@ -11,8 +11,8 @@ const mapDispatchToProps = (dispatch) => ({
         dispatch(updateNewWeatherCityText(text));
     },
 
-    updateWeather: () => {
-        dispatch(updateWeather());
+    updateWeather: (city) => {
+        dispatch(fetchWeatherData(city));
     }
 
 });

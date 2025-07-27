@@ -16,10 +16,10 @@ function Header() {
 
       <div className={styles.servicesContainer}>
         <div className={styles.service}>
-          <NavLink to="/openWeather" className={({isActive}) => isActive ? styles.activeLink: ""}>OpenWeather</NavLink>
+          <NavLink to="/openWeather" className={({ isActive }) => isActive ? styles.activeLink : ""}>OpenWeather</NavLink>
         </div>
         <div className={styles.service}>
-          <NavLink to="/gismeteo" className={({isActive}) => isActive ? styles.activeLink:""} >Gismeteo</NavLink>
+          <NavLink to="/gismeteo" className={({ isActive }) => isActive ? styles.activeLink : ""} >Gismeteo</NavLink>
         </div>
       </div>
     </header>
