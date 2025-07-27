@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Content.module.css";
-import SearchSection from "./searchSection/searchSection";
+import SearchSectionContainer from "./searchSection/searchSectionContainer";
 import WeatherData from "./weatherData/weatherData";
 
 function ContentWeather({ weatherServiceConfig }) {
 
-    if (!weatherServiceConfig) {
+    if (weatherServiceConfig.name === 'Default') {
         return (
             <div className={styles.weatherContainer}>
             </div>
@@ -14,7 +14,8 @@ function ContentWeather({ weatherServiceConfig }) {
     else
         return (
             <div className={styles.weatherContainer}>
-                <SearchSection site={weatherServiceConfig.name} />
+                <SearchSectionContainer/>
+                {/* <SearchSection site={weatherServiceConfig.name} /> */}
                 <WeatherData site={weatherServiceConfig.name} />
             </div>
         )
