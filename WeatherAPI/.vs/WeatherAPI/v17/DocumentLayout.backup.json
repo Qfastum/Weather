@@ -49,6 +49,10 @@
           "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "IWeatherService.cs",
@@ -58,8 +62,7 @@
               "RelativeToolTip": "WeatherAPI\\Services\\Interfaces\\IWeatherService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T11:42:36.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T11:42:36.038Z"
             },
             {
               "$type": "Document",
@@ -71,12 +74,7 @@
               "RelativeToolTip": "OpenWeartherClient\\WeatherClient.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T11:02:54.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-07-19T11:02:54.373Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "OpenWeartherClient\\Models\\RequstModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T11:30:08.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T11:30:08.555Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "OpenWeartherClient\\Helpers\\RequstHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T11:29:58.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T11:29:58.125Z"
             },
             {
               "$type": "Document",
@@ -114,8 +110,7 @@
               "RelativeToolTip": "WeatherAPI\\Contracts\\WeatherContract.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T11:20:46.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T11:20:46.253Z"
             },
             {
               "$type": "Document",
@@ -127,8 +122,7 @@
               "RelativeToolTip": "WeatherAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T11:11:11.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T11:11:11.956Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "WeatherAPI\\Services\\WeatherService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAqwBMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T10:59:13.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T10:59:13.815Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "WeatherAPI\\Mappers\\WeatherMapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T09:59:58.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T09:59:58.046Z"
             }
           ]
         }
