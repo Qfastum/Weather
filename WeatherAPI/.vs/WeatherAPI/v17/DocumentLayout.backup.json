@@ -3,32 +3,27 @@
   "WorkspaceRootPath": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\openweartherclient\\helpers\\requsthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|solutionrelative:openweartherclient\\helpers\\requsthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\weatherapi\\configurations\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|solutionrelative:weatherapi\\configurations\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\openweartherclient\\models\\requstmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|solutionrelative:openweartherclient\\models\\requstmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\weatherapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|solutionrelative:weatherapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54230A82-2E40-4067-8D60-D5CC5B8F366C}|GismetioClient\\GismetioClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\gismetioclient\\weathergismetioclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54230A82-2E40-4067-8D60-D5CC5B8F366C}|GismetioClient\\GismetioClient.csproj|solutionrelative:gismetioclient\\weathergismetioclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d5417\\AppData\\Roaming\\Microsoft\\UserSecrets\\e1eb7c2a-1cf3-4f7d-8ddc-26f01af11bb8\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54230A82-2E40-4067-8D60-D5CC5B8F366C}|GismetioClient\\GismetioClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\gismetioclient\\iweathergismetioclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54230A82-2E40-4067-8D60-D5CC5B8F366C}|GismetioClient\\GismetioClient.csproj|solutionrelative:gismetioclient\\iweathergismetioclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\weatherapi\\configurations\\iappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|solutionrelative:weatherapi\\configurations\\iappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54230A82-2E40-4067-8D60-D5CC5B8F366C}|GismetioClient\\GismetioClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\gismetioclient\\helpers\\requstweatherhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54230A82-2E40-4067-8D60-D5CC5B8F366C}|GismetioClient\\GismetioClient.csproj|solutionrelative:gismetioclient\\helpers\\requstweatherhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\weatherapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|solutionrelative:weatherapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\openweartherclient\\weatherclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|solutionrelative:openweartherclient\\weatherclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\openweartherclient\\iweatherclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30C2672A-E881-70A6-B90A-716C69E45596}|OpenWeartherClient\\OpenWeartherClient.csproj|solutionrelative:openweartherclient\\iweatherclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|c:\\e\\csharp\\weather\\weather\\weatherapi\\weatherapi\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91E143C-973B-4543-881F-BC3F28AA2305}|WeatherAPI\\WeatherAPI.csproj|solutionrelative:weatherapi\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +41,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequstModel.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\Models\\RequstModel.cs",
-              "RelativeDocumentMoniker": "OpenWeartherClient\\Models\\RequstModel.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\Models\\RequstModel.cs",
-              "RelativeToolTip": "OpenWeartherClient\\Models\\RequstModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:28:19.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RequstWeatherHelper.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\GismetioClient\\Helpers\\RequstWeatherHelper.cs",
-              "RelativeDocumentMoniker": "GismetioClient\\Helpers\\RequstWeatherHelper.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\GismetioClient\\Helpers\\RequstWeatherHelper.cs",
-              "RelativeToolTip": "GismetioClient\\Helpers\\RequstWeatherHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:19:40.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RequstHelper.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\Helpers\\RequstHelper.cs",
-              "RelativeDocumentMoniker": "OpenWeartherClient\\Helpers\\RequstHelper.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\Helpers\\RequstHelper.cs",
-              "RelativeToolTip": "OpenWeartherClient\\Helpers\\RequstHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:18:46.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IWeatherClient.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\IWeatherClient.cs",
-              "RelativeDocumentMoniker": "OpenWeartherClient\\IWeatherClient.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\IWeatherClient.cs",
-              "RelativeToolTip": "OpenWeartherClient\\IWeatherClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:10:21.053Z",
+              "DocumentIndex": 2,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\d5417\\AppData\\Roaming\\Microsoft\\UserSecrets\\e1eb7c2a-1cf3-4f7d-8ddc-26f01af11bb8\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\d5417\\AppData\\Roaming\\Microsoft\\UserSecrets\\e1eb7c2a-1cf3-4f7d-8ddc-26f01af11bb8\\secrets.json",
+              "ToolTip": "C:\\Users\\d5417\\AppData\\Roaming\\Microsoft\\UserSecrets\\e1eb7c2a-1cf3-4f7d-8ddc-26f01af11bb8\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\d5417\\AppData\\Roaming\\Microsoft\\UserSecrets\\e1eb7c2a-1cf3-4f7d-8ddc-26f01af11bb8\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-28T22:53:51.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IWeatherGismetioClient.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\GismetioClient\\IWeatherGismetioClient.cs",
-              "RelativeDocumentMoniker": "GismetioClient\\IWeatherGismetioClient.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\GismetioClient\\IWeatherGismetioClient.cs",
-              "RelativeToolTip": "GismetioClient\\IWeatherGismetioClient.cs",
+              "Title": "IAppSettings.cs",
+              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Configurations\\IAppSettings.cs",
+              "RelativeDocumentMoniker": "WeatherAPI\\Configurations\\IAppSettings.cs",
+              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Configurations\\IAppSettings.cs",
+              "RelativeToolTip": "WeatherAPI\\Configurations\\IAppSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:07:29.38Z",
+              "WhenOpened": "2025-07-28T22:53:22.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WeatherAPI\\appsettings.json",
+              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\appsettings.json",
+              "RelativeToolTip": "WeatherAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-28T22:51:24.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Configurations\\AppSettings.cs",
+              "RelativeDocumentMoniker": "WeatherAPI\\Configurations\\AppSettings.cs",
+              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Configurations\\AppSettings.cs",
+              "RelativeToolTip": "WeatherAPI\\Configurations\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:47:47.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "WeatherClient.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\WeatherClient.cs",
-              "RelativeDocumentMoniker": "OpenWeartherClient\\WeatherClient.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\OpenWeartherClient\\WeatherClient.cs",
-              "RelativeToolTip": "OpenWeartherClient\\WeatherClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABQAAAAAAAAAA==",
+              "Title": "WeatherService.cs",
+              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Services\\WeatherService.cs",
+              "RelativeDocumentMoniker": "WeatherAPI\\Services\\WeatherService.cs",
+              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Services\\WeatherService.cs",
+              "RelativeToolTip": "WeatherAPI\\Services\\WeatherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:01:23.719Z",
+              "WhenOpened": "2025-07-28T22:47:35.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherGismetioClient.cs",
-              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\GismetioClient\\WeatherGismetioClient.cs",
-              "RelativeDocumentMoniker": "GismetioClient\\WeatherGismetioClient.cs",
-              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\GismetioClient\\WeatherGismetioClient.cs",
-              "RelativeToolTip": "GismetioClient\\WeatherGismetioClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WeatherAPI\\Program.cs",
+              "ToolTip": "C:\\E\\CSharp\\Weather\\Weather\\WeatherAPI\\WeatherAPI\\Program.cs",
+              "RelativeToolTip": "WeatherAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T16:00:31.816Z",
+              "WhenOpened": "2025-07-28T22:47:06.724Z",
               "EditorCaption": ""
             }
           ]

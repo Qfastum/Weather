@@ -10,9 +10,9 @@ namespace GismetioClient.Helpers
 {
     public class RequstWeatherHelper
     {
-        public static RequstWeatherModel GetWeatherRequstModel(string city, string apiKey)
+        public static RequstGismetioModel GetWeatherRequstModel(string city, string apiKey)
         {
-            return new RequstWeatherModel {
+            return new RequstGismetioModel {
                 RequstUrl= $"/v2/weather/current/{city}",
                 httpMethod = HttpMethod.Get,
                 HeaderName = "X-Gismeteo-Token",

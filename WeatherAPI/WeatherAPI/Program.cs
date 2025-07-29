@@ -30,11 +30,9 @@ builder.Services.AddCors(options => {
           .AllowAnyHeader());
 });
  
-
-
 var app = builder.Build();
 
-app.UseHealthChecks("/health");
+//app.UseHealthChecks("/health");
 
 app.UseCors("AllowFrontend");
 

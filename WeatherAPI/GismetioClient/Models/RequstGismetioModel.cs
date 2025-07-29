@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GismetioClient.Models
 {
-    public class RequstWeatherModel
+    public class RequstGismetioModel
     {
         public string RequstUrl { get; set; }
 
@@ -14,7 +14,6 @@ namespace GismetioClient.Models
 
         public string HeaderName { get; set; }
 
-        public string HeaderValue { get; set; }
-        
+        public string HeaderValue { get; set; }  
     }
 }
