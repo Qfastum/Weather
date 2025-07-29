@@ -1,8 +1,10 @@
-﻿namespace GismetioClient.Contracts
+﻿using Newtonsoft.Json;
+
+namespace GismetioClient.Contracts
 {
     public class TemperatureInfoContract
     {
-
-        public float C { get; set; }
+        [JsonProperty("C")]
+        public float DegreesOfHeat { get; set; }
     }
 }

@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace GismetioClient.Helpers
 {
-    public class RequstWeatherHelper
+    public static class RequstWeatherHelper
     {
         public static RequstGismetioModel GetWeatherRequstModel(string city, string apiKey)
         {
-            return new RequstGismetioModel {
+            return new RequstGismetioModel 
+            {
                 RequstUrl= $"/v2/weather/current/{city}",
                 httpMethod = HttpMethod.Get,
-                HeaderName = "X-Gismeteo-Token",
-                HeaderValue = apiKey,
+                ApiKey = apiKey,
             };
 
         }

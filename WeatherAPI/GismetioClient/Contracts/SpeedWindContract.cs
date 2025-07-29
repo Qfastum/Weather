@@ -5,6 +5,6 @@ namespace GismetioClient.Contracts
     public class SpeedWindContract
     {
         [JsonProperty("m_s")]
-        public int Ms {  get; set; }
+        public int WindSpeed {  get; set; }
     }
 }

@@ -36,9 +36,9 @@ namespace GismetioClient
 
         private async Task<T> SendRequstAsync<T>(RequstGismetioModel model)
         {
-            
+            const string GismeteoTokenHeader = "X-Gismeteo-Token";
             var requstMessage = new HttpRequestMessage(model.httpMethod, model.RequstUrl);
-            requstMessage.Headers.Add(model.HeaderName, model.HeaderValue);
+            requstMessage.Headers.Add(GismeteoTokenHeader, model.ApiKey);
             var responsMessage = await _httpClient.SendAsync(requstMessage);
 
             if (responsMessage.IsSuccessStatusCode)
@@ -47,7 +47,6 @@ namespace GismetioClient
                 var result = JsonConvert.DeserializeObject<T>(responsLine);
 
                 return result;
-
             }
             else
             {

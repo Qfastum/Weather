@@ -12,8 +12,6 @@ namespace GismetioClient.Models
 
         public HttpMethod httpMethod { get; set; }
 
-        public string HeaderName { get; set; }
-
-        public string HeaderValue { get; set; }  
+        public string ApiKey { get; set; }  
     }
 }

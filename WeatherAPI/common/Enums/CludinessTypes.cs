@@ -10,7 +10,7 @@ namespace common.Enums
     {
         Clear =  0,
         PartyCloudy = 1,
-        Cloudy =2,
+        Cloudy = 2,
         Overcast = 3,
         Variable = 101
     }

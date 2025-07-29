@@ -9,23 +9,25 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var settings = new AppSettings(builder.Configuration);
+var origins = new CorsSettings(builder.Configuration);
 
+builder.Services.AddSingleton<ICorsSettings>(origins);
 builder.Services.AddSingleton<IAppSettings>(settings);
 builder.Services.AddSingleton<IWeatherClient, WeatherClient>();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 builder.Services.AddHealthChecks();
 
-builder.Services.AddCors(options => {
 
+
+builder.Services.AddCors(options => {
     options.AddPolicy("AllowFrontend",
         policy => policy
-          .WithOrigins("http://localhost:3000")
+          .WithOrigins(origins.Cors)
           .AllowAnyMethod()
           .AllowAnyHeader());
 });

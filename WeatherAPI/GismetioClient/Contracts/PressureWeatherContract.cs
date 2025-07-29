@@ -10,6 +10,6 @@ namespace GismetioClient.Contracts
     public class PressureWeatherContract
     {
         [JsonProperty("mm_hg_atm")]
-        public int MmHgAt { get; set; }
+        public int AtmosphericPressure { get; set; }
     }
 }
