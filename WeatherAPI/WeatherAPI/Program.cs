@@ -16,22 +16,22 @@ builder.Services.AddSwaggerGen();
 var settings = new AppSettings(builder.Configuration);
 
 builder.Services.AddSingleton<IAppSettings>(settings);
-builder.Services.AddSingleton<IWeatherClient,  WeatherClient>();
+builder.Services.AddSingleton<IWeatherClient, WeatherClient>();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 builder.Services.AddHealthChecks();
 
-builder.Services.AddCors(options => { 
+builder.Services.AddCors(options => {
     options.AddPolicy("AllowFrontend",
         policy => policy
           .WithOrigins("http://localhost:3000")
           .AllowAnyMethod()
           .AllowAnyHeader());
 });
- 
+
 var app = builder.Build();
 
-//app.UseHealthChecks("/health");
+app.UseHealthChecks("/health");
 
 app.UseCors("AllowFrontend");
 
