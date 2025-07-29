@@ -1,0 +1,10 @@
+.weatherContainer {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #C6F7EA;
+}
