@@ -4,11 +4,13 @@ namespace WeatherAPI.Mappers
 {
     public static class IdCytiMapper
     {
-        public static IdCytiContract Map(GismetioClient.Contracts.IdCityResponseContract response)
+        public static IdCytiContract Map(GismetioClient.Contracts.CitySearchContract response)
         {
+            var firstId = response?.Response?.Items.FirstOrDefault()?.IdCity ?? 0;
+
             return new IdCytiContract
             {
-                Id = response.Id,
+                IdCyti = firstId.ToString(),
             };
         }
 

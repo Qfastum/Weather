@@ -22,6 +22,7 @@ builder.Services.AddSingleton<IWeatherClient, WeatherClient>();
 builder.Services.AddSingleton<IWeatherGismeteoClient, WeatherGismeteoClient>();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
+builder.Services.AddScoped<IGismeteoWeatherService, GismeteoWaetherService>();
 builder.Services.AddHealthChecks();
 
 

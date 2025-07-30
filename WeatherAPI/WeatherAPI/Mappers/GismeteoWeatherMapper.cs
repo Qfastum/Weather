@@ -5,22 +5,25 @@ namespace WeatherAPI.Mappers
     public static class GismeteoWeatherMapper
     {
 
-        public static GismeteoWeatherContract Map(GismetioClient.Contracts.WeatherResponseContract response)
+        public static GismeteoWeatherContract Map(GismetioClient.Contracts.WeatherResponResponseContract response)
         {
+
+            var OpenResponse = response.Response;
+
             return new GismeteoWeatherContract
             {
-                LocalDate = response.Date.LocalDate,
-                AirDegreesOfHeat = response.Temperature.Air.DegreesOfHeat,
-                ComfortDegreesOfHeat = response.Temperature.Comfort.DegreesOfHeat,
-                DescriptionFull = response.Description.Full,
-                HumidityPrecent = response.Humidity.Precent,
-                AtmosphericPressure = response.Pressure.AtmosphericPressure,
-                CloudinessPrecent = response.Cloudiness.Precent,
-                CloudinessType = response.Cloudiness.Type,
-                PrecipitationType = response.Precipitation.Type,
-                PrecipitationIntensity =response.Precipitation.Intensity,
-                WindDirectionType = response.Wind.Direction.DirectionType,
-                WindSpeed = response.Wind.Speed.WindSpeed,
+                LocalDate = OpenResponse.Date.LocalDate,
+                AirDegreesOfHeat = OpenResponse.Temperature.Air.DegreesOfHeat,
+                ComfortDegreesOfHeat = OpenResponse.Temperature.Comfort.DegreesOfHeat,
+                DescriptionFull = OpenResponse.Description.Full,
+                HumidityPrecent = OpenResponse.Humidity.Precent,
+                AtmosphericPressure = OpenResponse.Pressure.AtmosphericPressure,
+                CloudinessPrecent = OpenResponse.Cloudiness.Precent,
+                CloudinessType = OpenResponse.Cloudiness.Type,
+                PrecipitationType = OpenResponse.Precipitation.Type,
+                PrecipitationIntensity =OpenResponse.Precipitation.Intensity,
+                WindDirectionType = OpenResponse.Wind.Direction.DirectionType,
+                WindSpeed = OpenResponse.Wind.Speed.WindSpeed,
             };
         }
     }

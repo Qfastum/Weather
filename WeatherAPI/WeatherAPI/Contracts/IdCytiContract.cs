@@ -2,6 +2,6 @@
 {
     public class IdCytiContract
     {
-        public int Id { get; set; }
+        public string IdCyti { get; set; }
     }
 }
