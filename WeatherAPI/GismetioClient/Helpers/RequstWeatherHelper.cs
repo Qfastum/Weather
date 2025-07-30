@@ -14,7 +14,7 @@ namespace GismetioClient.Helpers
         {
             return new RequstGismeteoModel 
             {
-                RequstUrl= $"/v2/weather/current/{city}",
+                RequstUrl= $"/v2/weather/current/{city}/",
                 httpMethod = HttpMethod.Get,
                 ApiKey = apiKey,
             };

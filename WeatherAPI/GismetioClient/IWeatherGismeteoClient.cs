@@ -9,8 +9,8 @@ namespace GismetioClient
 {
     public interface IWeatherGismeteoClient
     {
-        Task<WeatherResponseContract> GetWeatherAsync(string city, string apiKey);
+        Task<WeatherResponResponseContract> GetWeatherAsync(string city, string apiKey);
 
-        Task<IdCityResponseContract> GetCityIdAsync(string city, string apiKey);
+        Task<CitySearchContract> GetCityIdAsync(string city, string apiKey);
     }
 }
