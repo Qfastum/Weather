@@ -25,8 +25,6 @@ builder.Services.AddScoped<IWeatherService, WeatherService>();
 builder.Services.AddScoped<IGismeteoWeatherService, GismeteoWaetherService>();
 builder.Services.AddHealthChecks();
 
-
-
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowFrontend",
         policy => policy

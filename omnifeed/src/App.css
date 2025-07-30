@@ -1,0 +1,13 @@
+.app-wrapper {
+  margin: 0 auto;
+  width: 1280px;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: 
+  "app-header"
+  "content";
+  grid-template-rows: 75px 1fr;
+  grid-template-columns: 1fr;
+
+  background-color: #7FDFE6;
+}
