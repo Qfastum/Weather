@@ -1,3 +1,4 @@
+using GismetioClient;
 using OpenWeartherClient;
 using WeatherAPI.Configurations;
 using WeatherAPI.Services;
@@ -18,6 +19,7 @@ var origins = new CorsSettings(builder.Configuration);
 builder.Services.AddSingleton<ICorsSettings>(origins);
 builder.Services.AddSingleton<IAppSettings>(settings);
 builder.Services.AddSingleton<IWeatherClient, WeatherClient>();
+builder.Services.AddSingleton<IWeatherGismeteoClient, WeatherGismeteoClient>();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 builder.Services.AddHealthChecks();

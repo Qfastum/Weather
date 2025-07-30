@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GismetioClient\GismetioClient.csproj" />
     <ProjectReference Include="..\OpenWeartherClient\OpenWeartherClient.csproj" />
   </ItemGroup>
 
