@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GismetioClient.Models
 {
-    public class RequstGismetioModel
+    public class RequstGismeteoModel
     {
         public string RequstUrl { get; set; }
 

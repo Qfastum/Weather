@@ -12,6 +12,6 @@ namespace GismetioClient.Contracts
     {
 
         [JsonProperty("scale_8")]
-        public ScaleWindType Scale8 { get; set; }
+        public ScaleWindType DirectionType { get; set; }
     }
 }

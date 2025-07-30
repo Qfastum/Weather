@@ -8,13 +8,24 @@ using System.Threading.Tasks;
 
 namespace GismetioClient.Helpers
 {
-    public static class RequstWeatherHelper
+    public static class RequstGismeteoHelper
     {
-        public static RequstGismetioModel GetWeatherRequstModel(string city, string apiKey)
+        public static RequstGismeteoModel GetWeatherRequstModel(string city, string apiKey)
         {
-            return new RequstGismetioModel 
+            return new RequstGismeteoModel 
             {
                 RequstUrl= $"/v2/weather/current/{city}",
+                httpMethod = HttpMethod.Get,
+                ApiKey = apiKey,
+            };
+
+        }
+
+        public static RequstGismeteoModel GetIdCityRequstModel(string city, string apiKey)
+        {
+            return new RequstGismeteoModel
+            {
+                RequstUrl = $"/v2/search/cities/?query={city}",
                 httpMethod = HttpMethod.Get,
                 ApiKey = apiKey,
             };

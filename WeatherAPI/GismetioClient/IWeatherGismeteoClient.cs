@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GismetioClient
 {
-    public interface IWeatherGismetioClient
+    public interface IWeatherGismeteoClient
     {
         Task<WeatherResponseContract> GetWeatherAsync(string city, string apiKey);
 

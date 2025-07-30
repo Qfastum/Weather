@@ -6,11 +6,11 @@ using Newtonsoft.Json;
 
 namespace GismetioClient
 {
-    public class WeatherGismetioClient
+    public class WeatherGismeteoClient : IWeatherGismeteoClient
     {
         private readonly HttpClient _httpClient;
 
-        public WeatherGismetioClient ()
+        public WeatherGismeteoClient ()
         {
             _httpClient= new HttpClient
             {
@@ -20,7 +20,7 @@ namespace GismetioClient
 
         public async Task<WeatherResponseContract> GetWeatherAsync(string city, string apiKey)
         {
-            var requstModel = RequstWeatherHelper.GetWeatherRequstModel(city, apiKey);
+            var requstModel = RequstGismeteoHelper.GetWeatherRequstModel(city, apiKey);
             var result = await SendRequstAsync<WeatherResponseContract>(requstModel);
 
             return result;
@@ -28,13 +28,13 @@ namespace GismetioClient
 
         public async Task<IdCityResponseContract> GetCityIdAsync(string city, string apiKey)
         {
-            var requstModel = RequstIdCityHelper.GetIdCityRequstModel(city, apiKey);
+            var requstModel = RequstGismeteoHelper.GetIdCityRequstModel(city, apiKey);
             var result = await SendRequstAsync<IdCityResponseContract>(requstModel);
 
             return result;
         }
 
-        private async Task<T> SendRequstAsync<T>(RequstGismetioModel model)
+        private async Task<T> SendRequstAsync<T>(RequstGismeteoModel model)
         {
             const string GismeteoTokenHeader = "X-Gismeteo-Token";
             var requstMessage = new HttpRequestMessage(model.httpMethod, model.RequstUrl);
