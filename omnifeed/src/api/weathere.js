@@ -1,17 +1,9 @@
-import axios from 'axios';
-
-const apiClient = axios.create({
-    baseURL: 'https://localhost:7128',
-    headers: {
-        'Accept': '*/*',
-    },
-})
-
+import openWeatherClient from "./openWeatherClient"
 
 export const WeatherApi = {
     getOpenWeather: async (city) => {
         try {
-            const response = await apiClient.get('/Weather/get-open-weather', {
+            const response = await openWeatherClient.get('/Weather/get-open-weather', {
                 params: {
                     city: encodeURIComponent(city)
                 }

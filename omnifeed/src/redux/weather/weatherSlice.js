@@ -58,10 +58,10 @@ export const weatherSlice = createSlice({
 
 export const fetchWeatherData = createAsyncThunk(
     'weather/fetchWeatherData',
-    async (city, { rejectWithValue }) => {
+    async (city, {rejectWithValue}) => {
         try {
             const weatherData = await WeatherApi.getOpenWeather(city);
-            console.log('Данные о погоде:', weatherData);
+            console.log('Data weather:', weatherData);
 
             let temp = weatherData.temp - 273.15
             let tempMax = weatherData.tempMax - 273.15
