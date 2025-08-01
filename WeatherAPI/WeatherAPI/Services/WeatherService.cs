@@ -23,6 +23,5 @@ namespace WeatherAPI.Services
 
             return WeatherMapper.Map(weather);
         }
-
     }
 }

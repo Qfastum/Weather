@@ -19,6 +19,5 @@ namespace WeatherAPI.Mapers
                 WindSpeed = response.Wind.Speed,
             };
         }
-
     }
 }
