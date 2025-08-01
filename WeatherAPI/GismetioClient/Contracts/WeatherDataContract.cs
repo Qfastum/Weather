@@ -1,6 +1,6 @@
 ﻿namespace GismetioClient.Contracts
 {
-    public class WeatherResponseContract
+    public class WeatherDataContract
     {
         public DateWeatherContract Date { get; set; }
 

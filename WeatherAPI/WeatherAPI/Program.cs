@@ -16,7 +16,6 @@ builder.Services.AddSwaggerGen();
 var settings = new AppSettings(builder.Configuration);
 var origins = new CorsSettings(builder.Configuration);
 
-builder.Services.AddSingleton<ICorsSettings>(origins);
 builder.Services.AddSingleton<IAppSettings>(settings);
 builder.Services.AddSingleton<IWeatherClient, WeatherClient>();
 builder.Services.AddSingleton<IWeatherGismeteoClient, WeatherGismeteoClient>();

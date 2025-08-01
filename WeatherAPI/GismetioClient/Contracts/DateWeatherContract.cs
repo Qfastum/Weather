@@ -10,6 +10,6 @@ namespace GismetioClient.Contracts
     public class DateWeatherContract
     {
         [JsonProperty("local")]
-        public string LocalDate { get; set; }
+        public string DataTime { get; set; }
     }
 }

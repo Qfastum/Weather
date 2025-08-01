@@ -19,19 +19,11 @@ namespace WeatherAPI.Services
             _appSettings = appSettings;
         }
 
-        //public async Task<IdCytiContract> GetIdCytiAsync(string city)
-        //{Created services and map for
-        //    var idCyti = await _weatherGismetioClient.GetCityIdAsync(city, _appSettings.GismeteoApiKey);
-
-        //    return IdCytiMapper.Map(idCyti);
-        //}
-
         public async Task<GismeteoWeatherContract> GetGismeteoAsync(string city)
         {
-            var idCity = await _weatherGismetioClient.GetCityIdAsync(city, _appSettings.GismeteoApiKey);
-            var id = IdCytiMapper.Map(idCity);
+            var CityId = await _weatherGismetioClient.GetCityIdAsync(city, _appSettings.GismeteoApiKey);
 
-            var weather = await _weatherGismetioClient.GetWeatherAsync(id.IdCyti, _appSettings.GismeteoApiKey);
+            var weather = await _weatherGismetioClient.GetWeatherAsync(CityId.Response.Items[0].IdCity.ToString(), _appSettings.GismeteoApiKey);
 
             return GismeteoWeatherMapper.Map(weather);
         }

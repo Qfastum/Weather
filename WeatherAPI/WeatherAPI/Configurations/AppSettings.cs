@@ -8,9 +8,13 @@
 
         public AppSettings(IConfiguration configuration)
         {
+            Console.WriteLine(configuration);
+
             OpenWeatherApiKey = configuration.GetValue<string>(nameof(OpenWeatherApiKey));
 
             GismeteoApiKey = configuration.GetValue<string>(nameof(GismeteoApiKey));
         }
     }
+
+    
 }

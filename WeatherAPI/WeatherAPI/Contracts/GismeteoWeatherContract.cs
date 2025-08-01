@@ -4,7 +4,7 @@ namespace WeatherAPI.Contracts
 {
     public class GismeteoWeatherContract
     {
-        public string LocalDate { get; set; }
+        public string DataTime { get; set; }
 
         public float AirDegreesOfHeat { get; set; }
 

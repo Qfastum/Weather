@@ -2,6 +2,7 @@
 using GismetioClient.Contracts;
 using GismetioClient.Helpers;
 using GismetioClient.Models;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace GismetioClient
@@ -9,35 +10,35 @@ namespace GismetioClient
     public class WeatherGismeteoClient : IWeatherGismeteoClient
     {
         private readonly HttpClient _httpClient;
+        private readonly ILogger<WeatherGismeteoClient> _logger;
 
-        public WeatherGismeteoClient ()
+        public WeatherGismeteoClient (ILogger<WeatherGismeteoClient> logger)
         {
             _httpClient= new HttpClient
             {
                 BaseAddress = new Uri($"https://api.gismeteo.net"),
             };
+
+            _logger = logger;
         }
 
-        public async Task<WeatherResponResponseContract> GetWeatherAsync(string city, string apiKey)
+        public async Task<WeatherDataResponseContract> GetWeatherAsync(string city, string apiKey)
         {
             try
             {
-                Console.WriteLine("-------------------------------GetWeatherAsync---------------------------------");
-                Console.WriteLine($"Starting city ID: {city}");
+                _logger.LogInformation($"Starting city ID: {city}");
 
                 var requestModel = RequstGismeteoHelper.GetWeatherRequstModel(city, apiKey);
-                Console.WriteLine($"Request model: {JsonConvert.SerializeObject(requestModel)}");
+                _logger.LogDebug($"Request model: {JsonConvert.SerializeObject(requestModel)}");
 
-                var result = await SendRequstAsync<WeatherResponResponseContract>(requestModel);
-                Console.WriteLine($"API response: {JsonConvert.SerializeObject(result)}");
-                Console.WriteLine("-------------------------------GetWeatherAsync---------------------------------");
+                var result = await SendRequstAsync<WeatherDataResponseContract>(requestModel);
+                _logger.LogDebug($"API response: {JsonConvert.SerializeObject(result)}");
+
                 return result;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("-------------------------------GetWeatherAsync---------------------------------");
-                Console.WriteLine($"Error in GetWeatherAsync: {ex}");
-                Console.WriteLine("-------------------------------GetWeatherAsync---------------------------------");
+                _logger.LogError($"Error in GetWeatherAsync: {ex}");
                 throw;
             }
 
@@ -47,28 +48,26 @@ namespace GismetioClient
         {
             try
             {
-                Console.WriteLine("-------------------------------GetCityIdAsync---------------------------------");
-                Console.WriteLine($"Starting city ID lookup for: {city}");
+                _logger.LogInformation($"Starting city ID lookup for: {city}");
 
                 var requestModel = RequstGismeteoHelper.GetIdCityRequstModel(city, apiKey);
-                Console.WriteLine($"Request model: {JsonConvert.SerializeObject(requestModel)}");
+                _logger.LogDebug($"Request model: {JsonConvert.SerializeObject(requestModel)}");
 
                 var result = await SendRequstAsync<CitySearchContract>(requestModel);
-                Console.WriteLine($"API response: {JsonConvert.SerializeObject(result)}");
+                _logger.LogDebug($"API response: {JsonConvert.SerializeObject(result)}");
 
                 if (result?.Response?.Items?.FirstOrDefault()?.IdCity == 0)
                 {
-                    throw new Exception($"City {city} was not found or the API returned an invalid data format");
+                    var errorMessage = $"City {city} was not found or the API returned an invalid data format";
+                    _logger.LogWarning(errorMessage);
+                    throw new Exception(errorMessage);
                 }
-                Console.WriteLine("-------------------------------GetCityIdAsync---------------------------------");
 
                 return result;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("-------------------------------GetCityIdAsync---------------------------------");
-                Console.WriteLine($"Error in GetCityIdAsync: {ex}");
-                Console.WriteLine("-------------------------------GetCityIdAsync---------------------------------");
+                _logger.LogError($"Error in GetCityIdAsync: {ex}");
                 throw;
             }           
         }
@@ -79,23 +78,25 @@ namespace GismetioClient
             var requestMessage = new HttpRequestMessage(model.httpMethod, model.RequstUrl);
             requestMessage.Headers.Add(GismeteoTokenHeader, model.ApiKey);
 
-            Console.WriteLine($"Sending request to: {model.RequstUrl}");
-            Console.WriteLine($"Headers: {string.Join(", ", requestMessage.Headers.Select(h => $"{h.Key}={string.Join(",", h.Value)}"))}");
+            _logger.LogDebug($"Sending request to: {model.RequstUrl}");
+            _logger.LogDebug($"Headers: {string.Join(", ", requestMessage.Headers.Select(h => $"{h.Key}={string.Join(",", h.Value)}"))}");
 
-            var responsMessage = await _httpClient.SendAsync(requestMessage);
+            var responseMessage = await _httpClient.SendAsync(requestMessage);
 
-            if (responsMessage.IsSuccessStatusCode)
+            if (responseMessage.IsSuccessStatusCode)
             {
-                var responsLine = await responsMessage.Content.ReadAsStringAsync();
+                var responsLine = await responseMessage.Content.ReadAsStringAsync();
 
-                Console.WriteLine($"Response status: {responsMessage.StatusCode}");
-                Console.WriteLine($"Responns body: {responsLine}");
+                _logger.LogDebug($"Response status: {responseMessage.StatusCode}");
+                _logger.LogDebug($"Responns body: {responsLine}");
 
                 var result = JsonConvert.DeserializeObject<T>(responsLine);
                 return result;
             }
             else
             {
+                var errorMessage = $"API request failed with status code: {responseMessage.StatusCode}";
+                _logger.LogError(errorMessage);
                 throw new Exception("");
             }
         }

@@ -8,6 +8,6 @@ namespace GismetioClient.Contracts
 {
     public class HumidityWeatherContract
     {
-        public int Precent { get; set; }
+        public int Percent { get; set; }
     }
 }
