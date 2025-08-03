@@ -1,9 +1,10 @@
-import React from "react";
 import styles from "./weatherData.module.css";
+import Preloader from "../../common/Preloader/Preloader"
 
 function WeatherData(props) {
     return (
         <div className={styles.weatherContainer}>
+            {props.isFetching ? <Preloader/> : null}
             <div className={styles.weatherCard}>
                 <h2>Погода в городе {props.City}</h2>
                 <div className={styles.weatherMain}>

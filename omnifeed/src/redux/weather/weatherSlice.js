@@ -16,7 +16,8 @@ export const weatherSlice = createSlice({
         },
         newWeatherCity: "Минск",
         foundCity: "",
-        status: "idle",
+        isFetching: false,
+        status: null,
         error: null,
     },
 
@@ -30,10 +31,11 @@ export const weatherSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchWeatherData.pending, (state) => {
-                state.status = 'loading';
+                state.isFetching = true;
                 state.status = null;
             })
             .addCase(fetchWeatherData.fulfilled, (state, action) => {
+                state.isFetching = false;
                 state.status = 'succeeded';
                 state.foundCity = state.newWeatherCity;
                 state.newWeatherCity = "";
