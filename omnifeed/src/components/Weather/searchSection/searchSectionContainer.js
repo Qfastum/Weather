@@ -4,20 +4,12 @@ import { fetchWeatherData, updateNewWeatherCityText} from "../../../redux/weathe
 
 const mapStateToProps = (state) => ({
     City: state.weather.newWeatherCity,
-})
-
-const mapDispatchToProps = (dispatch) => ({
-    updateCityText: (text) => {
-        dispatch(updateNewWeatherCityText(text));
-    },
-
-    updateWeather: (city) => {
-        dispatch(fetchWeatherData(city));
-    }
-
 });
 
 
-const SearchSectionContainer = connect(mapStateToProps, mapDispatchToProps)(SearchSection)
+const SearchSectionContainer = connect(mapStateToProps, {
+        updateWeather: fetchWeatherData,
+        updateCityText: updateNewWeatherCityText,
+    })(SearchSection);
 
 export default SearchSectionContainer;

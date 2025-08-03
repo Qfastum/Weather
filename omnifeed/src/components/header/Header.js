@@ -13,7 +13,6 @@ function Header() {
         />
       </NavLink>
 
-
       <div className={styles.servicesContainer}>
         <div className={styles.service}>
           <NavLink to="/openWeather" className={({ isActive }) => isActive ? styles.activeLink : ""}>OpenWeather</NavLink>

@@ -1,8 +1,10 @@
 import axios from 'axios';
 
-const gismeteoClient = axios.create({
+const openWeatherClient = axios.create({
     baseURL: 'https://localhost:7128',
     headers: {
         'Accept': '*/*',
     },
 })
+
+export default openWeatherClient;
