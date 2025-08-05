@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import { fetchWeatherData, updateNewWeatherCityText} from "../../../redux/weather/weatherSlice";
 
 const mapStateToProps = (state) => ({
-    City: state.weather.newWeatherCity,
+    weatherCity: state.weather.newWeatherCity,
+    isFetching: state.weather.isFetching,
 });
 
 

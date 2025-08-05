@@ -3,7 +3,7 @@ import styles from "./searchSection.module.css";
 function SearchSection(props) {
     
     let updateWeather = () => {
-        props.updateWeather(props.City);
+        props.updateWeather(props.weatherCity);
     }
 
     let onCityChange = (e) => {
@@ -16,11 +16,11 @@ function SearchSection(props) {
             <input
                 type="text"
                 placeholder="Введите город..."
-                value={props.City}
+                value={props.weatherCity}
                 onChange={onCityChange}
                 className={styles.searchInput}
             />
-            <button className={styles.searchButton}
+            <button disabled={props.isFetching} className={styles.searchButton}
                 onClick={updateWeather}
             >
                 Погода из {props.site}

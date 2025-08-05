@@ -6,16 +6,16 @@ export const weatherSlice = createSlice({
     name: 'weather',
     initialState: {
         weatherData: {
-            description: "1",
-            icon: "1",
-            weatherConditions: "1",
-            temp: 0,
-            tempMax: 0,
-            tempMin: 0,
-            windSpeed: 0,
+            description: null,
+            icon: null,
+            weatherConditions: null,
+            temp: null,
+            tempMax: null,
+            tempMin: null,
+            windSpeed: null,
         },
         newWeatherCity: "Минск",
-        foundCity: "",
+        foundCity: null,
         isFetching: false,
         status: null,
         error: null,
@@ -32,11 +32,11 @@ export const weatherSlice = createSlice({
         builder
             .addCase(fetchWeatherData.pending, (state) => {
                 state.isFetching = true;
-                state.status = null;
+                state.status = "expectation";
             })
             .addCase(fetchWeatherData.fulfilled, (state, action) => {
                 state.isFetching = false;
-                state.status = 'succeeded';
+                state.status = "succeeded";
                 state.foundCity = state.newWeatherCity;
                 state.newWeatherCity = "";
                 state.weatherData = {
@@ -50,7 +50,7 @@ export const weatherSlice = createSlice({
                 }
             })
             .addCase(fetchWeatherData.rejected, (state, action) => {
-                state.status = 'failed';
+                state.status = "failed";
                 state.error = action.payload;
             });
     },
@@ -59,11 +59,11 @@ export const weatherSlice = createSlice({
 })
 
 export const fetchWeatherData = createAsyncThunk(
-    'weather/fetchWeatherData',
+    "weather/fetchWeatherData",
     async (city, {rejectWithValue}) => {
         try {
             const weatherData = await WeatherApi.getOpenWeather(city);
-            console.log('Data weather:', weatherData);
+            //console.log("Data weather:", weatherData);
 
             let temp = weatherData.temp - 273.15
             let tempMax = weatherData.tempMax - 273.15
@@ -82,7 +82,7 @@ export const fetchWeatherData = createAsyncThunk(
             }
         }
         catch (error) {
-            console.error('Ошибка:', error.message);
+            console.error("Error:", error.message);
             return rejectWithValue({
                 message: error.response?.data?.message || error.message,
                 status: error.response?.status

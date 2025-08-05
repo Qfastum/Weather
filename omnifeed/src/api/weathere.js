@@ -13,15 +13,15 @@ export const WeatherApi = {
         catch (error) {
             if (error.response) {
                 // Сервер ответил с ошибкой
-                console.error('Ошибка сервера:', error.response.status, error.response.data);
-                throw new Error(`Ошибка сервера: ${error.response.status}`);
+                console.error("Server error:", error.response.status, error.response.data);
+                throw new Error(`Server error: ${error.response.status}`);
             } else if (error.request) {
                 // Запрос был сделан, но ответ не получен
-                console.error('Нет ответа от сервера');
-                throw new Error('Сервер не отвечает');
+                console.error("No response from server");
+                throw new Error("Server is not responding");
             } else {
                 // Ошибка настройки запроса
-                console.error('Ошибка запроса:', error.message);
+                console.error("Request Error:", error.message);
                 throw error;
             }
         }
