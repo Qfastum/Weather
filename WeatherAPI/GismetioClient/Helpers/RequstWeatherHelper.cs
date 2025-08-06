@@ -10,11 +10,11 @@ namespace GismetioClient.Helpers
 {
     public static class RequstGismeteoHelper
     {
-        public static RequstGismeteoModel GetWeatherRequstModel(string city, string apiKey)
+        public static RequstGismeteoModel GetWeatherRequstModel(int cityId, string apiKey)
         {
             return new RequstGismeteoModel 
             {
-                RequstUrl= $"/v2/weather/current/{city}/",
+                RequstUrl= $"/v2/weather/current/{cityId}/",
                 httpMethod = HttpMethod.Get,
                 ApiKey = apiKey,
             };

@@ -4,7 +4,7 @@ namespace WeatherAPI.Contracts
 {
     public class GismeteoWeatherContract
     {
-        public string DataTime { get; set; }
+        public DateTime Date { get; set; }
 
         public float AirDegreesOfHeat { get; set; }
 
@@ -26,6 +26,6 @@ namespace WeatherAPI.Contracts
 
         public ScaleWindType WindDirectionType { get; set; }
 
-        public int WindSpeed { get; set; }
+        public float WindSpeed { get; set; }
     }
 }

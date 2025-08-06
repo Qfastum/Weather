@@ -9,22 +9,22 @@ namespace WeatherAPI.Mappers
         public static GismeteoWeatherContract Map(WeatherDataResponseContract response)
         {
 
-            var OpenResponse = response.WeatherData;
+            var weather = response.WeatherData;
 
             return new GismeteoWeatherContract
             {
-                DataTime = OpenResponse.Date.DataTime,
-                AirDegreesOfHeat = OpenResponse.Temperature.Air.DegreesOfHeat,
-                ComfortDegreesOfHeat = OpenResponse.Temperature.Comfort.DegreesOfHeat,
-                DescriptionFull = OpenResponse.Description.Full,
-                HumidityPrecent = OpenResponse.Humidity.Percent,
-                AtmosphericPressure = OpenResponse.Pressure.AtmosphericPressure,
-                CloudinessPrecent = OpenResponse.Cloudiness.Percent,
-                CloudinessType = OpenResponse.Cloudiness.Type,
-                PrecipitationType = OpenResponse.Precipitation.Type,
-                PrecipitationIntensity =OpenResponse.Precipitation.Intensity,
-                WindDirectionType = OpenResponse.Wind.Direction.DirectionType,
-                WindSpeed = OpenResponse.Wind.Speed.WindSpeed,
+                Date = weather.Date.date,
+                AirDegreesOfHeat = weather.Temperature.Air.DegreesOfHeat,
+                ComfortDegreesOfHeat = weather.Temperature.Comfort.DegreesOfHeat,
+                DescriptionFull = weather.Description.Full,
+                HumidityPrecent = weather.Humidity.Percent,
+                AtmosphericPressure = weather.Pressure.AtmosphericPressure,
+                CloudinessPrecent = weather.Cloudiness.Percent,
+                CloudinessType = weather.Cloudiness.Type,
+                PrecipitationType = weather.Precipitation.Type,
+                PrecipitationIntensity =weather.Precipitation.Intensity,
+                WindDirectionType = weather.Wind.Direction.DirectionType,
+                WindSpeed = weather.Wind.Speed.WindSpeed,
             };
         }
     }

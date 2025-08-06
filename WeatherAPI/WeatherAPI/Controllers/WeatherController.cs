@@ -1,5 +1,6 @@
 ﻿using GismetioClient;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using WeatherAPI.Services;
 using WeatherAPI.Services.Interfaces;
@@ -11,12 +12,10 @@ namespace WeatherAPI.Controllers
     public class WeatherController : ControllerBase
     {
         private readonly IWeatherService _weatherService;
-        private readonly IGismeteoWeatherService _gismeteoWeatherService;
 
-        public WeatherController(IWeatherService weatherService, IGismeteoWeatherService gismeteoWeatherService)
+        public WeatherController(IWeatherService weatherService)
         {
             _weatherService = weatherService;
-            _gismeteoWeatherService = gismeteoWeatherService;
         }
 
         [HttpGet]
@@ -41,7 +40,12 @@ namespace WeatherAPI.Controllers
         {
             try
             {
-                var resalt = await _gismeteoWeatherService.GetGismeteoAsync(city);
+                var resalt = await _weatherService.GetGismeteoWeatherAsync(city);
+
+                if (resalt != null)
+                {
+                    return NotFound("City not found");
+                } 
 
                 return Ok(resalt);
             }

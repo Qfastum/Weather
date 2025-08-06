@@ -22,13 +22,13 @@ namespace GismetioClient
             _logger = logger;
         }
 
-        public async Task<WeatherDataResponseContract> GetWeatherAsync(string city, string apiKey)
+        public async Task<WeatherDataResponseContract> GetWeatherAsync(int cityId, string apiKey)
         {
             try
             {
-                _logger.LogInformation($"Starting city ID: {city}");
+                _logger.LogInformation($"Starting city ID: {cityId}");
 
-                var requestModel = RequstGismeteoHelper.GetWeatherRequstModel(city, apiKey);
+                var requestModel = RequstGismeteoHelper.GetWeatherRequstModel(cityId, apiKey);
                 _logger.LogDebug($"Request model: {JsonConvert.SerializeObject(requestModel)}");
 
                 var result = await SendRequstAsync<WeatherDataResponseContract>(requestModel);
@@ -44,7 +44,7 @@ namespace GismetioClient
 
         }
 
-        public async Task<CitySearchContract> GetCityIdAsync(string city, string apiKey)
+        public async Task<CityContract> GetCityIdAsync(string city, string apiKey)
         {
             try
             {
@@ -53,10 +53,10 @@ namespace GismetioClient
                 var requestModel = RequstGismeteoHelper.GetIdCityRequstModel(city, apiKey);
                 _logger.LogDebug($"Request model: {JsonConvert.SerializeObject(requestModel)}");
 
-                var result = await SendRequstAsync<CitySearchContract>(requestModel);
+                var result = await SendRequstAsync<CityContract>(requestModel);
                 _logger.LogDebug($"API response: {JsonConvert.SerializeObject(result)}");
 
-                if (result?.Response?.Items?.FirstOrDefault()?.IdCity == 0)
+                if (result?.Response?.Items?.FirstOrDefault()?.CityId == 0)
                 {
                     var errorMessage = $"City {city} was not found or the API returned an invalid data format";
                     _logger.LogWarning(errorMessage);
@@ -97,7 +97,7 @@ namespace GismetioClient
             {
                 var errorMessage = $"API request failed with status code: {responseMessage.StatusCode}";
                 _logger.LogError(errorMessage);
-                throw new Exception("");
+                throw new Exception(errorMessage);
             }
         }
     }
