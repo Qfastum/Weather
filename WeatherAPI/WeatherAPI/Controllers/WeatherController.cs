@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using GismetioClient;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using WeatherAPI.Services;
 using WeatherAPI.Services.Interfaces;
 
 namespace WeatherAPI.Controllers
@@ -29,7 +32,28 @@ namespace WeatherAPI.Controllers
             {
                 return StatusCode(500);
             }
-            
+        }
+
+        [HttpGet]
+        [Route("get-gismetio-weather")]
+        public async Task<IActionResult> GetGismetioWeatherByCity(string city)
+        {
+            try
+            {
+                var resalt = await _weatherService.GetGismeteoWeatherAsync(city);
+
+                if (resalt != null)
+                {
+                    return NotFound("City not found");
+                } 
+
+                return Ok(resalt);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+
         }
     }
 }
